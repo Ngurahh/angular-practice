@@ -35,6 +35,12 @@ import { Component } from '@angular/core';
       font-size: 20px
     }
 
+    button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+
     p {
       margin-top: 10px;
       font-size: 20px;
