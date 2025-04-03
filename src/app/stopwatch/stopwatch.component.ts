@@ -24,31 +24,43 @@ import { Component } from '@angular/core';
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-        background-color: #f0f0f0;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        background-color: #e0f7fa;
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .counter-container:hover {
+        transform: scale(1.02);
       }
 
       .time {
-        font-size: 2em;
-        color: #333;
-        margin-bottom: 20px;
+        font-size: 3em;
+        color: #00796b;
+        margin-bottom: 25px;
+        font-weight: bold;
       }
 
       .controls button {
-        padding: 10px 20px;
+        padding: 12px 25px;
         margin: 5px;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         background-color: #007bff;
         color: white;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, transform 0.2s;
+        font-size: 1.1em;
       }
 
       .controls button:hover {
         background-color: #0056b3;
+        transform: translateY(-2px);
+      }
+
+      .controls button:active {
+        transform: translateY(1px);
       }
 
       .controls button:disabled {
@@ -72,8 +84,7 @@ export class StopwatchComponent {
     this.isRunning = true;
     (this.intervalRef = setInterval(() => {
       this.elapsedTime += 1;
-    })),
-      100;
+    })), 100;
     console.log('Stopwatch Started');
   }
 
