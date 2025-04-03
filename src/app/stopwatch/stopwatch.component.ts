@@ -5,18 +5,19 @@ import { Component } from '@angular/core';
   selector: 'app-stopwatch',
   imports: [CommonModule],
   standalone: true,
-  template: ` <div class="counter-container">
-    <p class="time"> {{ elapsedTime | number : "1.1-1"}} seconds</p>
+  template: `
+    <div class="counter-container">
+      <p class="time">{{ elapsedTime | number : '1.1-1' }} seconds</p>
 
-    <div class="controls">
+      <div class="controls">
         <button (click)="startStop()">
-        {{ isRunning ? "Stop" : "Start" }}
+          {{ isRunning ? 'Stop' : 'Start' }}
         </button>
 
         <button (click)="reset()" [disabled]="!elapsedTime">Reset</button>
+      </div>
     </div>
-  
-  </div> `,
+  `,
   styles: [
     `
       .counter-container {
@@ -58,6 +59,7 @@ import { Component } from '@angular/core';
     `,
   ],
 })
+
 export class StopwatchComponent {
   startStop() {
     this.isRunning ? this.stop() : this.start();
@@ -71,7 +73,8 @@ export class StopwatchComponent {
     this.isRunning = true;
     (this.intervalRef = setInterval(() => {
       this.elapsedTime += 1;
-    })), 100;
+    })),
+      100;
     console.log('Stopwatch Started');
   }
 
