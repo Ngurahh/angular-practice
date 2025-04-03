@@ -13,7 +13,6 @@ import { Component } from '@angular/core';
         <button (click)="startStop()">
           {{ isRunning ? 'Stop' : 'Start' }}
         </button>
-
         <button (click)="reset()" [disabled]="!elapsedTime">Reset</button>
       </div>
     </div>
