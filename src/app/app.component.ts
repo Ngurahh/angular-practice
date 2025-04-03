@@ -4,7 +4,7 @@ import { CounterComponent } from './counter/counter.component';
 import { CommonModule } from '@angular/common';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { StopwatchComponent } from './stopwatch/stopwatch.component';
-import { GuessNumberComponent } from './guess-number/guess-number.component';
+import { GuessNumberComponent } from './guess-number/guess-number-updated.component';
 @Component({
   selector: 'app-root',
   imports: [FormsModule, CounterComponent, CommonModule, TodoListComponent, StopwatchComponent, GuessNumberComponent],

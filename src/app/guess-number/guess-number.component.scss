@@ -1,0 +1,60 @@
+/* General styles for the guess number component */
+.game-container {
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for the game area */
+  padding: 20px; /* Adding padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners for the container */
+  margin-top: 50px;
+}
+
+.input-number {
+  width: 80px; /* Increased width */
+  padding: 12px; /* Slight increase in padding */
+  font-size: 18px; /* Increased font size */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.input-number:focus {
+  border-color: #28a745; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.button {
+  padding: 12px 24px; /* Increased padding */
+  font-size: 18px; /* Increased font size */
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+
+  &.success {
+    color: green; /* Green for success messages */
+  }
+
+  &.error {
+    color: red; /* Red for error messages */
+  }
+}
+
+.game-over {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red; /* Distinct color for game over */
+}
