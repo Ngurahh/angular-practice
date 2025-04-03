@@ -3,9 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { CounterComponent } from './counter/counter.component';
 import { CommonModule } from '@angular/common';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { StopwatchComponent } from './stopwatch/stopwatch.component';
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, CounterComponent, CommonModule, TodoListComponent],
+  imports: [FormsModule, CounterComponent, CommonModule, TodoListComponent, StopwatchComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
