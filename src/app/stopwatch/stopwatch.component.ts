@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
 
       .time {
         font-size: 3em;
-        color: #00796b;
+        color:rgb(72, 94, 91);
         margin-bottom: 25px;
         font-weight: bold;
       }
